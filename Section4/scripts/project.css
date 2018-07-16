@@ -1,0 +1,51 @@
+/* body {
+  background-color: #c5d5ea;
+} */
+fieldset {
+  background-color: #f2f2f2;
+  border: none;
+  border-radius: 10px;
+  margin: 55px 0 0 250px;
+  width: 450px;
+  height: 350px;
+}
+
+h2 {
+  background-color: #cf0606;
+  color: #fff;
+  margin: 0 -11px 0 -11px;
+  padding: 15px;
+  position: relative;
+  bottom: 4.5px;
+  border-radius: 10px;
+}
+
+.zebra {
+  width: 330px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  margin-left: 50px;
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#login {
+  width: 150px;
+  height: 45px;
+  border-radius: 10px;
+  border: none;
+  margin-top: -7px;
+  background-color: #cf0606;
+  color: #ffffff;
+  margin-left: 145px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+div {
+  text-align: center;
+  margin-bottom: 20px;
+}
