@@ -23,8 +23,11 @@
 
 <body>
   <h1>Sec. 4. Forms</h1>
+  <p>name attribute is important as it corresponds to the input value. When the form is sent the data will make sense as the
+    value 42 will match the name "age".</p>
 
   <h3>Example 1</h3>
+  <p>value is left blank as user will provide the value he enters his name etc.</p>
   <form action="">
     <div>
       <label for="firstname">First Name:</label>
@@ -72,7 +75,22 @@
     <input type="submit">
   </form>
 
-
+  <h3>Example 4 - field set to group related fields together</h3>
+  <p></p>
+  <form action="#">
+    <fieldset style="width: 250px;">
+      <!-- Personal Information -->
+      First Name:
+      <br>
+      <input type="text" name="firstname" value="">
+      <br> Last Name:
+      <br>
+      <input type="text" name="lastname" value="">
+      <br>
+      <br>
+      <input type="submit" value="Submit">
+    </fieldset>
+  </form>
   <footer>
 
   </footer>
