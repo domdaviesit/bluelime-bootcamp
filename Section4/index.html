@@ -16,6 +16,7 @@
     footer {
       height: 100px;
       background: #000;
+      margin-top: 20px;
     }
   </style>
 </head>
@@ -23,7 +24,41 @@
 <body>
   <h1>Sec. 4. Forms</h1>
 
+  <h3>Example 1</h3>
+  <form action="">
+    <div>
+      <label for="firstname">First Name:</label>
+      <br>
+      <input type="text">
+    </div>
+    <div>
+      <label for="lastname">Last Name</label>
+      <br>
+      <input type="text">
+    </div>
+    <br>
+    <input type="submit" value="">
+    <br>
+    <br>
+    <div>
+      <input type="radio" name="gender" checked value="male">
+      <label for="">Male</label>
+      <br>
+      <input type="radio" name="gender" value="male">
+      <label for="">Female</label>
+    </div>
+  </form>
 
+  <h3>Example 2 - text areas</h3>
+  <p>columns go across and rows go down in the text area.</p>
+  <form action="#" method="POST">
+    <textarea name="message" id="message" cols="50" rows="10">
+      Please use this are to provide more details.
+    </textarea>
+    <br>
+    <br>
+    <input type="submit">
+  </form>
   <footer>
 
   </footer>
