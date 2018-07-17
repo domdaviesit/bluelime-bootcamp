@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Storing HTML Form Input in Local Storage</title>
+</head>
+
+<body onload="retrieve()">
+  <h2>Storing HTML Form Input in Local Storage</h2>
+  <p>We'll use these three JS methods</p>
+  <ul>
+    <li>setItem - specify values for item you want to store (key value pairs)</li>
+    <li>getItem - retrieve saved items</li>
+    <li>removeItem - remove saved items</li>
+  </ul>
+  <p>Not really sure about this next exercise. Local storage only works one at a time, you'll need to use web SQL or IndexedDB
+    but check for browser support.</p>
+  <h2>Example</h2>
+  <h3>Enter your firstname</h3>
+  <form action="#">
+    <input type="text" id="firstname">
+    <input type="button" value="save" onclick="save()">
+    <input type="button" value="removed" onclick="removed()">
+  </form>
+
+
+  <script>
+    // Save the input
+
+    function save() {
+      var Name = document.getElementById("firstname").value;
+      localStorage.setItem("text", Name);
+
+      //localStorage.clear();
+    }
+
+    // Retrieve data that has been saved
+
+    function retrieve() {
+      var retrieveData = localStorage.getItem("text");
+      if (retrieveData) {
+        document.getElementById("firstname").value = retrieveData;
+      }
+    }
+
+    function removed() {
+      document.getElementById("firstname").value = "";
+      localStorage.removeItem("text");
+    }
+
+
+  </script>
+</body>
+
+</html>
